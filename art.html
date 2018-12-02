@@ -11,9 +11,11 @@
         <img id='earth' src='assets/earth.jpg'/>
         <img id='stars' src='assets/stars.png'/>
     </a-assets>
+    
+    <a-entity n-object='res: architecture/ceiling-2w-2l'></a-entity>
 
     <!-- add the moon to the scene -->
-    <a-cube position='0 1.5 0' material='src: #earth;'>
+    <a-sphere position='0 1.5 0' material='src: #earth;'>
         <!-- add an animation to make it rotate -->
         <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
     </a-sphere>
