@@ -26,15 +26,31 @@ AFRAME.registerComponent('color-cycle', {
 
 <!-- set up the scene -->
 <a-scene altspace='vertical-align: bottom;'>
+    
     <a-box position='1 1 0' color-cycle>
+    <a-animation to='0 360 0.5' easing='linear' dur='20000' repeat='indefinite'/>
+    </a-box>
+    
+        <a-box position='2 2 1' color-cycle>
     <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
     </a-box>
-        <a-box position='2 2 0' color-cycle>
+    
+        <a-box position='3 3 2' color-cycle>
     <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
     </a-box>
-        <a-box position='3 3 0' color-cycle>
+    
+        <a-box position='1 1 3' color-cycle>
     <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
     </a-box>
+    
+        <a-box position='2 2 4' color-cycle>
+    <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
+    </a-box>
+    
+        <a-box position='3 3 5' color-cycle>
+    <a-animation to='0 360 0' easing='linear' dur='20000' repeat='indefinite'/>
+    </a-box>
+    
 </a-scene>
 
 </body></html>
